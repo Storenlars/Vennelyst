@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kolonihaveforening [Navn]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #000;
+    }
+    header {
+      background: #253746; /* GN mørk blå */
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #ea7200; /* GN orange */
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 1rem auto;
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #253746;
+    }
+    .nyhed {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+    }
+    .nyhed:last-child {
+      border-bottom: none;
+    }
+    .galleri {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .galleri img {
+      max-width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kolonihaveforening [Navn]</h1>
+    <p>Et hyggeligt fællesskab i [område]</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Forside</a>
+    <a href="bestyrelse.html">Bestyrelse & kontakt</a>
+    <a href="referater.html">Nyheder & referater</a>
+    <a href="praktisk.html">Praktisk info</a>
+    <a href="galleri.html">Galleri</a>
+  </nav>
+
+  <main>
+    <h2>Seneste nyt</h2>
+    <div class="nyhed">
+      <strong>[Dato]</strong> – Arbejdslørdag med fælles grill.  
+      <a href="referater.html">Læs mere</a>
+    </div>
+    <div class="nyhed">
+      <strong>[Dato]</strong> – Referat fra generalforsamling ligger klar.  
+      <a href="referater.html">Se referat</a>
+    </div>
+
+    <h2>Billeder fra haven</h2>
+    <div class="galleri">
+      <img src="billeder/have1.jpg" alt="Have 1" />
+      <img src="billeder/have2.jpg" alt="Have 2" />
+      <!-- Tilføj flere billeder efter behov -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Kolonihaveforening [Navn]
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
